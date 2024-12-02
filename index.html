@@ -383,6 +383,28 @@
             <li data-filter=".filter-product">Card</li>
             <li data-filter=".filter-branding">Web</li>
           </ul><!-- End Réalisations Filters -->
+          
+          .realisations-filters {
+           display: flex; /* Garante um layout flexível */
+           flex-direction: column; /* Empilha os itens verticalmente */
+           gap: 10px; /* Espaçamento entre os itens */
+           list-style: none; /* Remove os marcadores padrão da lista */
+           padding: 0; /* Remove espaçamento interno */
+           margin: 0; /* Remove margens */
+           }
+
+          .realisations-filters li {
+           display: block; /* Garante que cada item ocupe uma linha */
+           cursor: pointer; /* Torna os itens clicáveis */
+           padding: 5px 10px; /* Adiciona espaçamento interno */
+           background-color: #f4f4f4; /* Adiciona uma cor de fundo (opcional) */
+           border-radius: 5px; /* Bordas arredondadas (opcional) */
+           text-align: left; /* Alinha o texto à esquerda */
+           }
+
+          .realisations-filters li:hover {
+           background-color: #ddd; /* Efeito ao passar o mouse (opcional) */
+           }
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
