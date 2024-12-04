@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -15,71 +14,69 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  
-   <!-- Main CSS Inline -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>À propos</title>
-  <link rel="stylesheet" href="styles.css"> 
-  
-  <!-- Para arquivo CSS externo -->
+
+  <!-- CSS Inline -->
   <style>
-     
-    /* CSS Inline */
-    .col-lg-6.content p,
-    .col-lg-6.content ul li span, 
-    .col-lg-6 p {
+    .content p, .content ul li span, .content ul li i {
       text-align: justify;
     }
-
-    .col-lg-6.content ul {
+    .content ul {
       list-style: none;
       padding: 0;
     }
-
-    .col-lg-6.content ul li {
-      margin-bottom: 15px;
+    .content ul li {
       display: flex;
       align-items: flex-start;
-      gap: 10px;
+      margin-bottom: 15px;
     }
-
-    .col-lg-6.content ul li i {
+    .content ul li i {
       color: #007bff;
-      font-size: 20px;
     }
-
-    .col-lg-6 a.services {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
+    .content a.services {
       font-size: 16px;
       color: #007bff;
-      text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s ease;
     }
-
-    .col-lg-6 a.services:hover {
-      color: #0056b3;
-    }
-    
-          </style>
-       </head>
-    <body>
-       <link rel="stylesheet" href="styles.css">
-    </body>
+  </style>
+</head>
+<body>
+  <section id="contact">
+    <div class="container">
+      <form action="https://formspree.io/f/manyvono" method="post" class="php-email-form">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <label for="name-field" class="pb-2">Votre nom</label>
+            <input type="text" name="name" id="name-field" class="form-control" required>
+          </div>
+          <div class="col-md-6">
+            <label for="email-field" class="pb-2">Votre e-mail</label>
+            <input type="email" name="email" id="email-field" class="form-control" required>
+          </div>
+          <div class="col-md-12">
+            <label for="subject-field" class="pb-2">Sujet</label>
+            <input type="text" name="subject" id="subject-field" class="form-control" required>
+          </div>
+          <div class="col-md-12">
+            <label for="message-field" class="pb-2">Message</label>
+            <textarea name="message" id="message-field" rows="5" class="form-control" required></textarea>
+          </div>
+          <div class="col-md-12 text-center">
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </div>
+        </div>
+        <input type="hidden" name="_redirect" value="merci.html">
+      </form>
+    </div>
+  </section>
+</body>
 </html>
 
 <!-- repositório merci -->
