@@ -666,7 +666,39 @@
 
            </div>
         </form>
-          
+
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script>
+  // Inicialize o EmailJS com seu User ID
+  (function () {
+    emailjs.init('SEU_USER_ID'); // Substitua pelo seu User ID obtido no painel do EmailJS
+  })();
+
+  // Manipule o envio do formulário
+  document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const form = event.target;
+
+    emailjs
+      .sendForm('service_20wy07g', 'template_abcd123', form) // Substitua pelo seu Service ID e Template ID
+      .then(
+        function () {
+          const responseMessage = document.querySelector('.sent-message');
+          responseMessage.style.display = 'block';
+          responseMessage.innerText = 'Votre message a été envoyé avec succès !';
+          form.reset();
+        },
+        function (error) {
+          const errorMessage = document.querySelector('.error-message');
+          errorMessage.style.display = 'block';
+          errorMessage.innerText =
+            'Une erreur est survenue lors de l\'envoi du message : ' + error.text;
+        }
+      );
+   });
+  </script>
+      
           </div><!-- End Contact Form -->
 
         </div>
