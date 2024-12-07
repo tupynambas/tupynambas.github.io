@@ -1,6 +1,6 @@
-Thanks for downloading this template!
+بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
 
-Template Name: Arsha
-Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Nom du modèle : Tupynambá Site
+URL du modèle : https://tupynambá.com
+Auteur : Ilyes Majid 
+Licence : https://tupynamba.com
