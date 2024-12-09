@@ -633,49 +633,49 @@
           </div>
 
          <div class="col-lg-7">
-            <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-             <div class="row gy-4">
+           <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+         <div class="row gy-4">
 
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Votre nom</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
+         <div class="col-md-6">
+           <label for="name-field" class="pb-2">Votre nom</label>
+           <input type="text" name="from_name" id="name-field" class="form-control" required="">
+         </div>
 
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Votre e-mail</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
+         <div class="col-md-6">
+           <label for="email-field" class="pb-2">Votre e-mail</label>
+           <input type="email" class="form-control" name="reply_to" id="email-field" required="">
+         </div>
 
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Sujet</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
+         <div class="col-md-12">
+           <label for="subject-field" class="pb-2">Sujet</label>
+           <input type="text" class="form-control" name="subject" id="subject-field" required="">
+        </div>
 
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
+        <div class="col-md-12">
+          <label for="message-field" class="pb-2">Message</label>
+          <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+        </div>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Chargement</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Votre message a été envoyé. Merci !</div>
+        <div class="col-md-12 text-center">
+        <div class="loading">Chargement</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Votre message a été envoyé. Merci !</div>
 
-                  <button type="submit">Envoyer</button>
-              </div>
+        <button type="submit">Envoyer</button>
+      </div>
 
-           </div>
-        </form>
-
-        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    </div>
+  </form>
+ 
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
       <script>
   // Initialisez EmailJS avec votre User ID
-  (function () {
+    (function () {
     emailjs.init('uwZWNrWkd7-yQd_CJ'); // Remplacez par votre User ID obtenu à partir du tableau de bord EmailJS
-  })();
+    })();
 
-  // Gérer la soumission du formulaire
-  document.getElementById('contact-form').addEventListener('submit', function (event) {
+// Gérer la soumission du formulaire
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
     event.preventDefault();
 
     const form = event.target;
@@ -693,10 +693,11 @@
           const errorMessage = document.querySelector('.error-message');
           errorMessage.style.display = 'block';
           errorMessage.innerText =
-            'Une erreur est survenue lors de l\'envoi du message : ' + error.text;
+          'Une erreur est survenue lors de l\'envoi du message : ' + error.text;
         }
       );
-   });
+  });
+
   </script>
       
           </div><!-- End Contact Form -->
