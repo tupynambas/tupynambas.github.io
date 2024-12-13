@@ -128,6 +128,35 @@
 
   <main class="main">
 
+              .language-switcher {
+                margin-left: 10px; /* Reduz o espaço entre o botão e outros elementos */
+                }
+
+               #language-selector {
+               padding: 2px 8px;         /* Reduz o espaçamento interno */  
+               font-size: 12px;          /* Diminui o tamanho do texto */
+               border: 1px solid #ddd;   /* Mantém a borda fina */
+               border-radius: 3px;       /* Bordas ligeiramente arredondadas */
+               background-color: #fff;   /* Fundo branco */
+               color: #333;              /* Cor do texto */
+               width: auto;              /* Deixa o tamanho ajustado ao conteúdo */
+               max-width: 150px;         /* Limita a largura máxima */
+               transition: border-color 0.3s ease;
+               }
+
+               #language-selector:hover {
+               border-color: #007bff;    /* Cor de destaque ao passar o mouse */ 
+              }
+             }
+            }
+         
+          <script>
+           document.getElementById("language-selector").addEventListener("change", function () {
+           const selectedLanguage = this.value;
+           window.location.href = selectedLanguage; // Redireciona para a página correspondente
+          });
+          </script>
+
     <!-- Hero Section -->
     <section id="accueil" class="accueil section dark-background">
 
@@ -187,36 +216,10 @@
                 "1200": {
                   "slidesPerView": 6,
                   "spaceBetween": 120
-
-               .language-switcher {
-                margin-left: 10px; /* Reduz o espaço entre o botão e outros elementos */
                 }
-
-               #language-selector {
-               padding: 2px 8px;         /* Reduz o espaçamento interno */  
-               font-size: 12px;          /* Diminui o tamanho do texto */
-               border: 1px solid #ddd;   /* Mantém a borda fina */
-               border-radius: 3px;       /* Bordas ligeiramente arredondadas */
-               background-color: #fff;   /* Fundo branco */
-               color: #333;              /* Cor do texto */
-               width: auto;              /* Deixa o tamanho ajustado ao conteúdo */
-               max-width: 150px;         /* Limita a largura máxima */
-               transition: border-color 0.3s ease;
                }
-
-               #language-selector:hover {
-               border-color: #007bff;    /* Cor de destaque ao passar o mouse */ 
               }
-             }
-            }
-         
-          <script>
-           document.getElementById("language-selector").addEventListener("change", function () {
-           const selectedLanguage = this.value;
-           window.location.href = selectedLanguage; // Redireciona para a página correspondente
-          });
-          </script>
-      
+               
           </script>
           <div class="swiper-wrapper align-items-center">
             <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
