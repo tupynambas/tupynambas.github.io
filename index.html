@@ -207,6 +207,14 @@
               }
              }
             }
+         
+          <script>
+           document.getElementById("language-selector").addEventListener("change", function () {
+           const selectedLanguage = this.value;
+           window.location.href = selectedLanguage; // Redireciona para a página correspondente
+          });
+          </script>
+      
           </script>
           <div class="swiper-wrapper align-items-center">
             <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
