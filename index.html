@@ -163,7 +163,7 @@
         font-size: 14px;
         border: 1px solid #ddd;
         border-radius: 5px;
-        background-image: url('flag/france.png'); /* Bandeira inicial */
+        background-image: url('assets/img/france.png'); /* Bandeira inicial */
         background-repeat: no-repeat;
         background-position: 10px center; /* Posiciona a bandeira à esquerda */
         background-size: 20px; /* Tamanho da bandeira */
@@ -172,19 +172,19 @@
 
        /* Bandeiras específicas */
        #language-selector option.france {
-       background-image: url('flag/france.png');
+       background-image: url('assets/img/france.png');
        background-repeat: no-repeat;
        background-position: left center;
        }
 
        #language-selector option.brazil {
-       background-image: url('flag/brazil.png');
+       background-image: url('assets/img/brazil.png');
        background-repeat: no-repeat;
        background-position: left center;
        }
 
        #language-selector option.uruguay {
-       background-image: url('flag/uruguay.png');
+       background-image: url('assets/img/uruguay.png');
        background-repeat: no-repeat;
        background-position: left center;
        }
@@ -212,9 +212,9 @@
       document.getElementById("language-selector").addEventListener("change", function () {
       const selector = this;
       const flags = {
-      "index.html": "flags/france.png",
-      "index-br.html": "flags/brazil.png",
-      "index-uy.html": "flags/uruguay.png",
+      "index.html": "assets/img/france.png",
+      "index-br.html": "assets/img/brazil.png",
+      "index-uy.html": "assets/img/uruguay.png",
       };
 
       // Atualiza o fundo do `select` com a bandeira correspondente
