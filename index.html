@@ -1,13 +1,5 @@
 <!DOCTYPE html>
-
 <html lang="fr">
-<nav>
-<ul class="language-menu">
-    <li><a href="index.html">Français</a></li>
-    <li><a href="index-br.html">Português</a></li>
-    <li><a href="index-uy.html">Español</a></li>
-  </ul>
-</nav>
 
 <head>
   <meta charset="utf-8">
@@ -103,7 +95,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Décommentez la ligne ci-dessous si vous souhaitez également utiliser un logo d'image -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">Tupynambá</h1>
@@ -120,7 +112,16 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="https://linktr.ee/info.tupynamba">Découvrir</a>
+       <!-- Botão de idiomas -->
+    <div class="language-switcher">
+      <select id="language-selector" class="form-select">
+        <option value="index.html" selected>Français</option>
+        <option value="index-br.html">Português</option>
+        <option value="index-uy.html">Español</option>
+      </select>
+    </div>    
+        
+  <a class="btn-getstarted" href="https://linktr.ee/info.tupynamba">Découvrir</a>
 
     </div>
   </header>
@@ -186,8 +187,25 @@
                 "1200": {
                   "slidesPerView": 6,
                   "spaceBetween": 120
+
+               .language-switcher {
+                margin-left: 20px; /* Espaço entre o botão e outros elementos */
                 }
+
+               #language-selector {
+               padding: 5px 10px;
+               font-size: 14px;
+               border: 1px solid #ddd;
+               border-radius: 5px;
+               background-color: #fff;
+               color: #333;
+               transition: border-color 0.3s ease;
+               }
+
+               #language-selector:hover {
+               border-color: #007bff;
               }
+             }
             }
           </script>
           <div class="swiper-wrapper align-items-center">
