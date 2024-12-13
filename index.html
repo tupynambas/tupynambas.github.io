@@ -148,34 +148,55 @@
        <!-- Botão de idiomas -->
     <div class="language-switcher">
       <select id="language-selector" class="form-select">
-        <option value="index.html" selected>Français</option>
-        <option value="index-br.html">Português</option>
-        <option value="index-uy.html">Español</option>
+        <option value="index.html" class="france" selected>Français</option>
+        <option value="index-br.html" class="brazil">Português</option>
+        <option value="index-uy.html" class="uruguay">Español</option>
       </select>
     </div>
 
      <style>
-        .language-switcher {
-        margin-left: 10px; /* Reduz o espaço entre o botão e outros elementos */
-        }
-
+        /* Estiliza o seletor */
         #language-selector {
-        padding: 2px 8px;         /* Reduz o espaçamento interno */  
-        font-size: 12px;          /* Diminui o tamanho do texto */
-        border: 1px solid #ddd;   /* Mantém a borda fina */
-        border-radius: 3px;       /* Bordas ligeiramente arredondadas */
-        background-color: #fff;   /* Fundo branco */
-        color: #333;              /* Cor do texto */
-        width: auto;              /* Deixa o tamanho ajustado ao conteúdo */
-        max-width: 150px;         /* Limita a largura máxima */
-        transition: border-color 0.3s ease;
+        appearance: none; /* Remove o estilo padrão do navegador */
+        background-color: #fff;
+        padding: 5px 10px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-image: url('flag/france.png'); /* Bandeira inicial */
+        background-repeat: no-repeat;
+        background-position: 10px center; /* Posiciona a bandeira à esquerda */
+        background-size: 20px; /* Tamanho da bandeira */
+        padding-left: 40px; /* Espaço para a bandeira */
         }
 
-        #language-selector:hover {
-        border-color: #007bff;    /* Cor de destaque ao passar o mouse */ 
-        }
+       /* Bandeiras específicas */
+       #language-selector option.france {
+       background-image: url('flag/france.png');
+       background-repeat: no-repeat;
+       background-position: left center;
+       }
+
+       #language-selector option.brazil {
+       background-image: url('flag/brazil.png');
+       background-repeat: no-repeat;
+       background-position: left center;
+       }
+
+       #language-selector option.uruguay {
+       background-image: url('flag/uruguay.png');
+       background-repeat: no-repeat;
+       background-position: left center;
+       }
+
+       /* Estiliza a lista de opções (alguns navegadores) */
+       #language-selector option {
+       padding-left: 40px; /* Espaço para bandeira */
+       background-size: 20px;
+  
+       }
       }
-    }
+     }
        
       </style>
      </head>
@@ -187,6 +208,20 @@
       });
      </script>
 
+     <script>
+      document.getElementById("language-selector").addEventListener("change", function () {
+      const selector = this;
+      const flags = {
+      "index.html": "flags/france.png",
+      "index-br.html": "flags/brazil.png",
+      "index-uy.html": "flags/uruguay.png",
+      };
+
+      // Atualiza o fundo do `select` com a bandeira correspondente
+      selector.style.backgroundImage = `url(${flags[selector.value]})`;
+      });
+     </script>
+     
   <a class="btn-getstarted" href="https://linktr.ee/info.tupynamba">Découvrir</a>
 
     </div>
