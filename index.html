@@ -189,21 +189,23 @@
                   "spaceBetween": 120
 
                .language-switcher {
-                margin-left: 20px; /* Espaço entre o botão e outros elementos */
+                margin-left: 10px; /* Reduz o espaço entre o botão e outros elementos */
                 }
 
                #language-selector {
-               padding: 5px 10px;
-               font-size: 14px;
-               border: 1px solid #ddd;
-               border-radius: 5px;
-               background-color: #fff;
-               color: #333;
+               padding: 2px 8px;         /* Reduz o espaçamento interno */  
+               font-size: 12px;          /* Diminui o tamanho do texto */
+               border: 1px solid #ddd;   /* Mantém a borda fina */
+               border-radius: 3px;       /* Bordas ligeiramente arredondadas */
+               background-color: #fff;   /* Fundo branco */
+               color: #333;              /* Cor do texto */
+               width: auto;              /* Deixa o tamanho ajustado ao conteúdo */
+               max-width: 150px;         /* Limita a largura máxima */
                transition: border-color 0.3s ease;
                }
 
                #language-selector:hover {
-               border-color: #007bff;
+               border-color: #007bff;    /* Cor de destaque ao passar o mouse */ 
               }
              }
             }
