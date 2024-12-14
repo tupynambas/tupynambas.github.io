@@ -148,9 +148,9 @@
        <!-- Botão de idiomas -->
     <div class="language-switcher">
       <select id="language-selector" class="form-select">
-        <option value="index.html" class="france" selected>FR</option>
-        <option value="index-br.html" class="brazil">BR</option>
-        <option value="index-uy.html" class="uruguay">ES</option>
+        <option value="index.html" selected>FR</option>
+        <option value="index-br.html">BR</option>
+        <option value="index-uy.html">ES</option>
       </select>
     </div>
 
@@ -159,7 +159,6 @@
         #language-selector {
         appearance: none; /* Remove o estilo padrão do navegador */
         background-color: #fff;
-        padding: 5px 10px;
         font-size: 14px;
         border: 1px solid #ddd;
         border-radius: 5px;
@@ -168,6 +167,7 @@
         background-position: 10px center; /* Posiciona a bandeira à esquerda */
         background-size: 20px; /* Tamanho da bandeira */
         padding-left: 40px; /* Espaço para a bandeira */
+        height: 38px;  
         }
 
        /* Bandeiras específicas */
@@ -203,14 +203,6 @@
       
      <script>
       document.getElementById("language-selector").addEventListener("change", function () {
-      const selectedLanguage = this.value;
-      window.location.href = selectedLanguage; // Redireciona para a página correspondente
-      });
-     </script>
-
-     <script>
-      document.getElementById("language-selector").addEventListener("change", function () {
-      const selector = this;
       const flags = {
       "index.html": "assets/img/france.png",
       "index-br.html": "assets/img/brazil.png",
@@ -218,7 +210,9 @@
       };
 
       // Atualiza o fundo do `select` com a bandeira correspondente
-      selector.style.backgroundImage = `url(${flags[selector.value]})`;
+      this.style.backgroundImage = `url(${flags[this.value]})`;
+     // Redireciona para a página correspondente
+      window.location.href = this.value;
       });
      </script>
      
