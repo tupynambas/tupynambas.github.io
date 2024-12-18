@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tupynambá</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+   <!-- Main CSS Inline -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre</title>
+  <link rel="stylesheet" href="styles.css"> 
+  
+  <!-- Para arquivo CSS externo -->
+  <style>
+     
+    /* CSS Inline */
+    .col-lg-6.content p,
+    .col-lg-6.content ul li span, 
+    .col-lg-6 p {
+      text-align: justify;
+    }
+
+    .col-lg-6.content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .col-lg-6.content ul li {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .col-lg-6.content ul li i {
+      color: #007bff;
+      font-size: 20px;
+    }
+
+    .col-lg-6 a.services {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 16px;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .col-lg-6 a.services:hover {
+      color: #0056b3;
+    }
+    
+          </style>
+       </head>
+    <body>
+       <link rel="stylesheet" href="styles.css">
+    </body>
+</html>
+<!-- =======================================================
+  * Template Name: Tupynambá
+  * Template URL: https://tupynambas.com/br
+  * Updated: 29 joumada al oula 1446 avec 
+  * Author: Ilyes Majid
+  * License: https://tupynambas.com/br
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+       <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Décommentez la ligne ci-dessous si vous souhaitez également utiliser un logo d'image -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Tupynambá</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#inicio" class="active">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#serviços">Serviços</a></li>
+          <li><a href="#portefolio">Portefólio</a></li>     
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <style>
+      
+       #header {
+       display: flex;
+       align-items: center;
+       }
+
+       .container-xl {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       }
+      
+       #navmenu {
+       margin-left: 0;
+       position: relative;
+       left: -40px;             /* Ajuste o valor para mover o menu mais para a esquerda */
+       }
+
+       .navmenu ul {
+       display: flex;
+       list-style: none;
+       padding: 0;
+       margin: 0;
+       }
+
+       .navmenu ul li {
+       margin-right: 20px;      /* Espaçamento entre itens do menu */
+       }
+
+      </style>
+    </head>
+        
+       <!-- Botão de idiomas -->
+    <div class="language-switcher">
+      <select id="language-selector" class="form-select">
+        <option value="index.html" selected>FR</option>
+        <option value="index-br.html">BR</option>
+        <option value="index-uy.html">ES</option>
+      </select>
+    </div>
+
+     <style>
+        /* Estiliza o seletor */
+        #language-selector {
+        appearance: none; /* Remove o estilo padrão do navegador */
+        background-color: #fff;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-image: url('https://tupynambas.com/assets/img/france.png'); /* Bandeira inicial */
+        background-repeat: no-repeat;
+        background-position: 10px center; /* Posiciona a bandeira à esquerda */
+        background-size: 20px; /* Tamanho da bandeira */
+        padding-left: 40px; /* Espaço para a bandeira */
+        height: 38px;  
+        }
+
+       /* Bandeiras específicas */
+       #language-selector option.france {
+       background-image: url('https://tupynambas.com/assets/img/france.png');
+       background-repeat: no-repeat;
+       background-position: left center;
+       }
+
+       #language-selector option.brazil {
+       background-image: url('https://tupynambas.com/assets/img/brazil.png');
+       background-repeat: no-repeat;
+       background-position: left center;
+       }
+
+       #language-selector option.uruguay {
+       background-image: url('https://tupynambas.com/assets/img/uruguay.png');
+       background-repeat: no-repeat;
+       background-position: left center;
+       }
+
+       /* Estiliza a lista de opções (alguns navegadores) */
+       #language-selector option {
+       padding-left: 40px; /* Espaço para bandeira */
+       background-size: 20px;
+  
+       }
+      }
+     }
+       
+      </style>
+     </head>
+      
+     <script>
+      document.getElementById("language-selector").addEventListener("change", function () {
+      const flags = {
+      "index.html": "https://tupynambas.com/assets/img/france.png",
+      "index-br.html": "https://tupynambas.com/assets/img/brazil.png",
+      "index-uy.html": "https://tupynambas.com/assets/img/uruguay.png",
+      };
+
+      // Atualiza o fundo do `select` com a bandeira correspondente
+      this.style.backgroundImage = `url(${flags[this.value]})`;
+     // Redireciona para a página correspondente
+      window.location.href = this.value;
+      });
+     </script>
+     
+  <a class="btn-getstarted" href="https://linktr.ee/info.tupynamba">Ligue Já</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="accueil" class="accueil section dark-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>Soluções Web Inovadoras</h1>
+            <p>Na Tupynambá oferecemos soluções sob medida para transformar suas ideias em realidade digital.</p>
+            <div class="d-flex">
+              <a href="https://www.youtube.com/watch?v=nx7yEJrwn1M" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Assistam ao vídeo</span></a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="zoom-in">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 120
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+               }
+              }
+               
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- About Section -->
+    <section id="apropos" class="apropos section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Sobre</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              Bem-vindo à Tupynambá, empresa especializada em desenvolvimento web. Combinamos conhecimento técnico e criatividade para oferecer soluções digitais de qualidade.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>Com experiência em desenvolvimento web, dominamos tecnologias modernas, bem como ferramentas de criação. Também integramos soluções API e somos especialistas na implementação de plataformas comerciais.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>A nossa missão é transformar as suas ideias em websites modernos, eficientes e adaptados às suas necessidades. Seja para criar um site vitrine, uma plataforma de e-commerce ou otimizar seus processos digitais, estamos aqui para apoiá-lo em cada etapa.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Além de nossas competências técnicas, nossa paixão pela inovação nos leva a buscar sempre soluções inovadoras e eficazes para nossos clientes. Acreditamos numa comunicação clara e transparente, garantindo que cada projeto reflete os seus valores e atinga os seus objetivos.</span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>Acreditamos que toda empresa merece uma presença online que reflita sua singularidade e valores. Na Tupynambá nossa abordagem se baseia em ouvir atentamente suas necessidades para desenhar soluções personalizadas e inovadoras. Dominamos tecnologias de ponta para garantir locais eficientes, seguros e estéticos. Quer você seja uma pequena empresa, uma startup ou uma organização multinacional, adaptamos nossos serviços para atender aos seus objetivos específicos. Privilegiamos a colaboração transparente e a comunicação clara em cada fase do projeto. Como uma equipa apaixonada pela web, temos o compromisso de transformar as suas ideias em realidade digital, respeitando os prazos e o seu orçamento. A Tupynambá é muito mais que uma agência web – é sua parceira para o sucesso no mundo digital. Confie em nós para realizar o seu projeto web. Juntos, vamos construir a sua presença online e desenvolver soluções personalizadas que o diferenciam.</p>
+            <a href="#" class="services"><span>En savoir plus</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+          
+    </section><!-- /About Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="section why-us light-background" data-builder="section">
+
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span>Aumente sua visibilidade</span><strong>com um site profissional</strong></h3>
+              <p>
+                Atraia mais clientes, desenvolva a sua presença online e destaque-se com um site adaptado às suas necessidades.
+              </p>
+            </div>
+
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="faq-item faq-active">
+
+                <h3><span>01</span>Por quê ter um site é importante para uma empresa?</h3>
+                <div class="faq-content">
+                  <p>Um site oferece uma vitrine acessível 24 horas por dia, 7 dias por semana, permitindo que os clientes descubram seus produtos ou serviços. Isso cria credibilidade para o seu negócio e expande seu alcance. Com bom design e SEO, atrai novos clientes. É uma ferramenta fundamental para se destacar em um mercado competitivo.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>02</span>Como um site pode aumentar minhas vendas?</h3>
+                <div class="faq-content">
+                  <p>Um site permite que você alcance um público mais amplo, até mesmo internacionalmente. Facilita as compras online graças às soluções de e-commerce. Além disso, promoções e conteúdos envolventes podem fidelizar o cliente. Isso otimiza suas conversões, transformando visitantes em compradores.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>03</span>Um site é adequado para uma pequena empresa?</h3>
+                <div class="faq-content">
+                  <p>Com certeza, um site é essencial, independente do tamanho do negócio. Ajuda você a competir com jogadores maiores, aumentando sua visibilidade. É também uma forma econômica de promover seus serviços. Por fim, confere ao seu negócio uma imagem profissional e moderna.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+            <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <img src="assets/img/skills.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+
+            <h3>Especialistas em integração de sistemas digitais</h3>
+            <p class="fst-italic">
+              A integração de sistemas como ERP, CRM, APIs de pagamento e automação é comum, mas ainda existe um forte potencial de crescimento.
+            </p>
+
+            <div class="skills-content skills-animation">
+
+              <div class="progress">
+                <span class="skill"><span>API iFood para gerenciamento de pedidos.</span> <i class="val">29%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Plataformas de pagamento online (Pic Pay, PayPal).</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>ERP como SAP ou Microsoft Dynamics.</span> <i class="val">88%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Soluções de CRM como Salesforce e HubSpot.</span> <i class="val">88%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Services Section -->
+    <section id="serviços" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Serviços</h2>
+        <p>Nossas soluções para aumentar sua presença online</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-activity icon"></i></div>
+              <h4><a href="" class="stretched-link">Criação de sites</a></h4>
+              <p>Criamos sites personalizados que refletem a identidade única do seu negócio. Nossa equipe cria designs modernos, adaptados às necessidades do seu negócio e otimizados para uma experiência de usuário excepcional.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+              <h4><a href="" class="stretched-link">Otimização de motores de busca (SEO)</a></h4>
+              <p>Melhore a visibilidade do seu site no Google e outros motores de busca com as nossas soluções SEO. Ajudamos você a atrair visitantes mais qualificados e aumentar suas conversões.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+              <h4><a href="" class="stretched-link">Desenvolvimento de Lojas Online</a></h4>
+              <p>Leve o seu negócio para o próximo nível com uma loja online poderosa. Criamos plataformas de e-commerce seguras e intuitivas para maximizar suas vendas online.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+              <h4><a href="" class="stretched-link">Manutenção e Suporte Técnico</a></h4>
+              <p>Mantenha o foco no seu negócio enquanto nós cuidamos do seu site. Oferecemos serviços de manutenção, atualizações regulares e assistência técnica para garantir um funcionamento ideal.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/cta-bg.jpg" alt="">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Seja nosso cliente</h3>
+            <p>Transforme suas ideias em realidade com nossa experiência em desenvolvimento web. Contacte-nos agora para discutir o seu projeto e obter uma solução à medida e adaptada às suas necessidades!</p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="https://linktr.ee/info.tupynamba">Contate-nos</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Réalisations Section -->
+    <section id="portefolio" class="realisations section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portefólio</h2>
+        <p>A criatividade, o desenvolvimento e a integração de sistemas para soluções inovadoras passam por diversas etapas.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="realisations-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Todos</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Card</li>
+            <li data-filter=".filter-branding">Web</li>
+         
+          </ul><!-- End Réalisations Filters -->
+          
+          <style>
+          .portefólio-filters {
+           display: flex;
+           flex-direction: column;
+           gap: 10px;
+           list-style: none;
+           padding: 0;
+           margin: 0 0 20px 0;
+           }
+
+          .portefólio-filters li {
+           display: block;
+           cursor: pointer;
+           padding: 5px 10px;
+           background-color: #f4f4f4;
+           border-radius: 5px;
+           text-align: left;
+           }
+
+          .portefólio-filters li:hover {
+           background-color: #ddd;
+          }
+          }
+          }
+          </style>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 realisations-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="realisations-info">
+                <h4>etapas</h4>
+                <p>Integração de sistemas</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="realisations-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="realisations-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Réalisations Item -->
+
+            <div class="col-lg-4 col-md-6 realisations-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="realisations-info">
+                <h4>etapas</h4>
+                <p>Desenvolvimento de software</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="realisations-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="realisations-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Réalisations Item -->
+
+            <div class="col-lg-4 col-md-6 realisations-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="realisations-info">
+                <h4>etapas</h4>
+                <p>Soluções web inovadoras</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="realisations-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="realisations-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Réalisations Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="realisations-info">
+                <h4>etapas</h4>
+                <p>Análise de dados</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="realisations-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="realisations-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Réalisations Item -->
+
+            <div class="col-lg-4 col-md-6 realisations-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="realisations-info">
+                <h4>etapas</h4>
+                <p>Programação e implantação</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="realisations-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="realisations-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Réalisations Item -->
+
+            <div class="col-lg-4 col-md-6 realisations-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="realisations-info">
+                <h4>etapas</h4>
+                <p>Concepção e forma</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="realisations-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="realisations-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Réalisations Item -->
+
+            <div class="col-lg-4 col-md-6 realisations-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="realisations-info">
+                <h4>etapas</h4>
+                <p>Otimização de desempenho</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="realisations-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="realisations-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Réalisations Item -->
+
+            <div class="col-lg-4 col-md-6 realisations-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="realisations-info">
+                <h4>etapas</h4>
+                <p>Gerenciamento de projetos</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="realisations-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="realisations-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Réalisations Item -->
+
+            <div class="col-lg-4 col-md-6 realisations-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="realisations-info">
+                <h4>etapas</h4>
+                <p>Testes de validação</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="realisations-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="realisations-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Réalisations Item -->
+
+          </div><!-- End Réalisations Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Réalisations Section -->
+
+                <i class="faq-toggle bi bi-chevron-right"></i>
+             
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+        </div>
+    
+    </main>
+
+      <footer id="footer" class="footer">
+
+   </div>
+
+    </section><!-- /Faq 2 Section -->
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contato</h2>
+        <p>Contacte-nos para discutir o seu projeto e descobrir como as nossas soluções podem transformar as suas ideias em realidade.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Endereço</h3>
+                  <p>São Paulo, SP, Brasil</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Ligue para nós</h3>
+                  <p>+55 11 98.411.23-52</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>info.tupynamba@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe class="custom-map" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467690.14400906523!2d-46.9249742621827!3d-23.682063517402767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1733099820644!5m2!1spt-BR!2sbr" 
+                width="100%" 
+                height="300" 
+                style="border:0; display: block; margin-top: 20px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade" 
+                frameborder="0">
+            </iframe>
+            </div>
+          </div>
+
+         <div class="col-lg-7">
+           <form id="contact-form" class="php-email-form" action="javascript:void(0);" data-aos="fade-up" data-aos-delay="200">
+         <div class="row gy-4">
+
+         <div class="col-md-6">
+           <label for="name-field" class="pb-2">Seu nome</label>
+           <input type="text" name="from_name" id="name-field" class="form-control" required="">
+         </div>
+
+         <div class="col-md-6">
+           <label for="email-field" class="pb-2">Seu e-mail</label>
+           <input type="email" class="form-control" name="reply_to" id="email-field" required="">
+         </div>
+
+         <div class="col-md-12">
+           <label for="subject-field" class="pb-2">Assunto</label>
+           <input type="text" class="form-control" name="subject" id="subject-field" required="">
+        </div>
+
+        <div class="col-md-12">
+          <label for="message-field" class="pb-2">Messagem</label>
+          <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+        </div>
+
+        <div class="col-md-12 text-center">
+        <div class="loading">Carregando</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Sua mensagem foi enviada. OBRIGADO !</div>
+
+        <button type="submit">Enviar</button>
+      </div>
+
+    </div>
+  </form>
+ 
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script>
+  // Initialisez EmailJS avec votre User ID
+    (function () {
+    emailjs.init('uwZWNrWkd7-yQd_CJ'); // Remplacez par votre User ID obtenu à partir du tableau de bord EmailJS
+    })();
+
+// Gérer la soumission du formulaire
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const form = event.target;
+
+    emailjs
+      .sendForm('service_20wy07g', 'template_c2qvz4l', form) // Remplacez par votre Service ID et Template ID
+      .then(
+        function () {
+          const responseMessage = document.querySelector('.sent-message');
+          responseMessage.style.display = 'block';
+          responseMessage.innerText = 'Votre message a été envoyé avec succès !';
+          form.reset();
+        },
+        function (error) {
+          const errorMessage = document.querySelector('.error-message');
+          errorMessage.style.display = 'block';
+          errorMessage.innerText =
+          'Une erreur est survenue lors de l\'envoi du message : ' + error.text;
+        }
+      );
+  });
+
+  </script>
+      
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Tupynambá</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>São Paulo, SP, Brasil</p>   
+            <p class="mt-3"><strong>Telefone:</strong> <span>+55 11 98.411.23-52</span></p>
+            <p><strong>Email:</strong> <span>info.tupynamba@gmail.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Links úteis</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Início</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Sobre</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Serviços</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Avisos Legais</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nos services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Criação</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Otimização</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Desenvolvimento</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Manutenção</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Siga-nos</h4>
+          <p>Siga-nos para se manter informado das últimas novidades e descobrir as nossas soluções inovadoras.</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Droit d'auteur</span> <strong class="px-1 sitename">Tupynambá</strong> <span>Tous droits réservés</span></p>
+      <div class="credits">
+        <!-- Tous les liens dans le pied de page doivent rester intacts. -->
+        <!-- Vous ne pouvez supprimer les liens que si vous avez acheté la version pro. -->
+        <!-- Informations sur les licences : https://tupynamba.com -->
+        <!-- Achetez la version pro avec formulaire de contact PHP/AJAX fonctionnel : [https://tupynamba.com] -->
+        Design par <a href="https://tupynambas.com/">Tupynambá</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
