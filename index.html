@@ -32,6 +32,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>À propos</title>
   <link rel="stylesheet" href="styles.css"> 
+
+   <!-- Botão de idiomas -->
+  <div class="language-switcher">
+   <select id="language-selector" class="form-select">
+      <option value="index.html" selected>FR</option>
+      <option value="index-br.html">BR</option>
+      <option value="index-uy.html">ES</option>
+   </select>
+  </div>
   
   <!-- Para arquivo CSS externo -->
   <style>
@@ -74,12 +83,51 @@
     .col-lg-6 a.services:hover {
       color: #0056b3;
     }
+
+    /* Estiliza o seletor */
+        #language-selector {
+        appearance: none; /* Remove o estilo padrão do navegador */
+        background-color: #fff;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-image: url('https://tupynambas.com/assets/img/france.png'); /* Bandeira inicial */
+        background-repeat: no-repeat;
+        background-position: 10px center; /* Posiciona a bandeira à esquerda */
+        background-size: 20px; /* Tamanho da bandeira */
+        padding-left: 40px; /* Espaço para a bandeira */
+        height: 38px;  
+        }
+
+       /* Bandeiras específicas */
+       #language-selector option.france {
+       background-image: url('https://tupynambas.com/assets/img/france.png');
+       background-repeat: no-repeat;
+       background-position: left center;
+       }
+
+       #language-selector option.brazil {
+       background-image: url('https://tupynambas.com/assets/img/brazil.png');
+       background-repeat: no-repeat;
+       background-position: left center;
+       }
+
+       #language-selector option.uruguay {
+       background-image: url('https://tupynambas.com/assets/img/uruguay.png');
+       background-repeat: no-repeat;
+       background-position: left center;
+       }
+
+       /* Estiliza a lista de opções (alguns navegadores) */
+       #language-selector option {
+       padding-left: 40px; /* Espaço para bandeira */
+       background-size: 20px;
     
-          </style>
-       </head>
-    <body>
+     </style>
+    </head>
+  <body>
        <link rel="stylesheet" href="styles.css">
-    </body>
+  </body>
 </html>
 <!-- =======================================================
   * Template Name: Tupynambá
@@ -143,64 +191,8 @@
        }
 
       </style>
-    </head>
-        
-       <!-- Botão de idiomas -->
-    <div class="language-switcher">
-      <select id="language-selector" class="form-select">
-        <option value="index.html" selected>FR</option>
-        <option value="index-br.html">BR</option>
-        <option value="index-uy.html">ES</option>
-      </select>
-    </div>
-
-     <style>
-        /* Estiliza o seletor */
-        #language-selector {
-        appearance: none; /* Remove o estilo padrão do navegador */
-        background-color: #fff;
-        font-size: 14px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        background-image: url('https://tupynambas.com/assets/img/france.png'); /* Bandeira inicial */
-        background-repeat: no-repeat;
-        background-position: 10px center; /* Posiciona a bandeira à esquerda */
-        background-size: 20px; /* Tamanho da bandeira */
-        padding-left: 40px; /* Espaço para a bandeira */
-        height: 38px;  
-        }
-
-       /* Bandeiras específicas */
-       #language-selector option.france {
-       background-image: url('https://tupynambas.com/assets/img/france.png');
-       background-repeat: no-repeat;
-       background-position: left center;
-       }
-
-       #language-selector option.brazil {
-       background-image: url('https://tupynambas.com/assets/img/brazil.png');
-       background-repeat: no-repeat;
-       background-position: left center;
-       }
-
-       #language-selector option.uruguay {
-       background-image: url('https://tupynambas.com/assets/img/uruguay.png');
-       background-repeat: no-repeat;
-       background-position: left center;
-       }
-
-       /* Estiliza a lista de opções (alguns navegadores) */
-       #language-selector option {
-       padding-left: 40px; /* Espaço para bandeira */
-       background-size: 20px;
-  
-       }
-      }
-     }
-       
-      </style>
      </head>
-      
+          
      <script>
       document.getElementById("language-selector").addEventListener("change", function () {
       const flags = {
