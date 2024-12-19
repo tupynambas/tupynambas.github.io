@@ -789,7 +789,15 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+	
+  <script>
+  document.querySelectorAll('.language-btn').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.stopPropagation(); // Previne interferências de outros scripts
+    });
+  });
+</script>
+	
 </body>
 
 </html>
