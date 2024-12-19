@@ -43,9 +43,10 @@
   </div>
 
   <style>
-    /* Estilo para garantir que o botão de idiomas e o menu fiquem na ordem correta */
+    /* Garantir que o botão de idiomas e o menu não se sobreponham */
     .language-switcher {
       margin-bottom: 20px; /* Ajuste o espaçamento entre o botão e o menu */
+      z-index: 10; /* Garantir que o botão de idiomas fique acima do conteúdo */  
     }
 
     /* CSS Inline */
@@ -132,7 +133,7 @@
 
 <body class="index-page">
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center flex-column">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Décommentez la ligne ci-dessous si vous souhaitez également utiliser um logo d'image -->
