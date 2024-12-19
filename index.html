@@ -35,17 +35,19 @@
 
    <!-- Botão de idiomas -->
   <div class="language-switcher">
-   <select id="language-selector" class="form-select">
+    <select id="language-selector" class="form-select">
       <option value="index.html" selected>FR</option>
       <option value="index-br.html">BR</option>
       <option value="index-uy.html">ES</option>
-   </select>
+    </select>
   </div>
-  
-  <!-- Para arquivo CSS externo -->
 
-   <style>
-     
+  <style>
+    /* Estilo para garantir que o botão de idiomas e o menu fiquem na ordem correta */
+    .language-switcher {
+      margin-bottom: 20px; /* Ajuste o espaçamento entre o botão e o menu */
+    }
+
     /* CSS Inline */
     .col-lg-6.content p,
     .col-lg-6.content ul li span, 
@@ -86,60 +88,54 @@
     }
 
     /* Estiliza o seletor */
-        #language-selector {
-        appearance: none; /* Remove o estilo padrão do navegador */
-        background-color: #fff;
-        font-size: 14px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        background-image: url('https://tupynambas.com/assets/img/france.png'); /* Bandeira inicial */
-        background-repeat: no-repeat;
-        background-position: 10px center; /* Posiciona a bandeira à esquerda */
-        background-size: 20px; /* Tamanho da bandeira */
-        padding-left: 40px; /* Espaço para a bandeira */
-        height: 38px;  
-        }
+    #language-selector {
+      appearance: none; /* Remove o estilo padrão do navegador */
+      background-color: #fff;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-image: url('https://tupynambas.com/assets/img/france.png'); /* Bandeira inicial */
+      background-repeat: no-repeat;
+      background-position: 10px center; /* Posiciona a bandeira à esquerda */
+      background-size: 20px; /* Tamanho da bandeira */
+      padding-left: 40px; /* Espaço para a bandeira */
+      height: 38px;  
+    }
 
-       /* Bandeiras específicas */
-       #language-selector option.france {
-       background-image: url('https://tupynambas.com/assets/img/france.png');
-       background-repeat: no-repeat;
-       background-position: left center;
-       }
+    /* Bandeiras específicas */
+    #language-selector option.france {
+      background-image: url('https://tupynambas.com/assets/img/france.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
 
-       #language-selector option.brazil {
-       background-image: url('https://tupynambas.com/assets/img/brazil.png');
-       background-repeat: no-repeat;
-       background-position: left center;
-       }
+    #language-selector option.brazil {
+      background-image: url('https://tupynambas.com/assets/img/brazil.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
 
-       #language-selector option.uruguay {
-       background-image: url('https://tupynambas.com/assets/img/uruguay.png');
-       background-repeat: no-repeat;
-       background-position: left center;
-       }
+    #language-selector option.uruguay {
+      background-image: url('https://tupynambas.com/assets/img/uruguay.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
 
-       /* Estiliza a lista de opções (alguns navegadores) */
-       #language-selector option {
-       padding-left: 40px; /* Espaço para bandeira */
-       background-size: 20px;
-         
-    </style>
-  </html>
-<!-- =======================================================
-  * Template Name: Tupynambá
-  * Template URL: https://tupynambas.com
-  * Updated: 29 joumada al oula 1446 avec 
-  * Author: Ilyes Majid
-  * License: https://tupynambas.com
-  ======================================================== -->
-  <body class="index-page">
+    /* Estiliza a lista de opções (alguns navegadores) */
+    #language-selector option {
+      padding-left: 40px; /* Espaço para bandeira */
+      background-size: 20px;
+    }
 
+  </style>
+</head>
+
+<body class="index-page">
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Décommentez la ligne ci-dessous si vous souhaitez également utiliser un logo d'image -->
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Décommentez la ligne ci-dessous si vous souhaitez également utiliser um logo d'image -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">Tupynambá</h1>
       </a>
@@ -154,6 +150,10 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+    </div>
+  </header>
+</body>
+</html>
 
       <style>
       
