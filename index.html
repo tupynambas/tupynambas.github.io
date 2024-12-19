@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="FR">
 
 <head>
   <meta charset="utf-8">
@@ -77,10 +77,7 @@
     
           </style>
        </head>
-    <body>
-       <link rel="stylesheet" href="styles.css">
-    </body>
-</html>
+  </html>
 <!-- =======================================================
   * Template Name: Tupynambá
   * Template URL: https://tupynambas.com
@@ -88,8 +85,6 @@
   * Author: Ilyes Majid
   * License: https://tupynambas.com
   ======================================================== -->
-</head>
-
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
@@ -143,8 +138,64 @@
        }
 
       </style>
+    </head>
+        
+       <!-- Botão de idiomas -->
+    <div class="language-switcher">
+      <select id="language-selector" class="form-select">
+        <option value="index.html" selected>FR</option>
+        <option value="index-br.html">BR</option>
+        <option value="index-uy.html">ES</option>
+      </select>
+    </div>
+
+     <style>
+        /* Estiliza o seletor */
+        #language-selector {
+        appearance: none; /* Remove o estilo padrão do navegador */
+        background-color: #fff;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-image: url('https://tupynambas.com/assets/img/france.png'); /* Bandeira inicial */
+        background-repeat: no-repeat;
+        background-position: 10px center; /* Posiciona a bandeira à esquerda */
+        background-size: 20px; /* Tamanho da bandeira */
+        padding-left: 40px; /* Espaço para a bandeira */
+        height: 38px;  
+        }
+
+       /* Bandeiras específicas */
+       #language-selector option.france {
+       background-image: url('https://tupynambas.com/assets/img/france.png');
+       background-repeat: no-repeat;
+       background-position: left center;
+       }
+
+       #language-selector option.brazil {
+       background-image: url('https://tupynambas.com/assets/img/brazil.png');
+       background-repeat: no-repeat;
+       background-position: left center;
+       }
+
+       #language-selector option.uruguay {
+       background-image: url('https://tupynambas.com/assets/img/uruguay.png');
+       background-repeat: no-repeat;
+       background-position: left center;
+       }
+
+       /* Estiliza a lista de opções (alguns navegadores) */
+       #language-selector option {
+       padding-left: 40px; /* Espaço para bandeira */
+       background-size: 20px;
+  
+       }
+      }
+     }
+       
+      </style>
      </head>
-          
+      
      <script>
       document.getElementById("language-selector").addEventListener("change", function () {
       const flags = {
@@ -153,14 +204,14 @@
       "index-uy.html": "https://tupynambas.com/assets/img/uruguay.png",
       };
 
-      // Atualiza o fundo do `select` com a bandeira correspondente
-      this.style.backgroundImage = `url(${flags[this.value]})`;
+      // Atualiza o fundo do select com a bandeira correspondente
+      this.style.backgroundImage = url(${flags[this.value]});
      // Redireciona para a página correspondente
       window.location.href = this.value;
       });
      </script>
      
-  <a class="btn-getstarted" href="https://linktr.ee/info.tupynamba">Appelez</a>
+ <a class="btn-getstarted" href="https://linktr.ee/info.tupynamba">Découvrir</a>
 
     </div>
   </header>
