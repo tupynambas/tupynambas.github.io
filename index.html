@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="FR">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -7,7 +7,7 @@
   <title>Tupynambá</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-
+  
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -27,112 +27,90 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   
-  <!-- Main CSS Inline -->
+   <!-- Main CSS Inline -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos</title>
+  <link rel="stylesheet" href="styles.css"> 
+  
+  <!-- Para arquivo CSS externo -->
   <style>
-    /* Botão de idiomas */
-    .language-switcher {
-      margin-bottom: 10px; /* Espaço entre o botão de idiomas e o menu */
-      text-align: center;
-      z-index: 10;
+     
+    /* CSS Inline */
+    .col-lg-6.content p,
+    .col-lg-6.content ul li span, 
+    .col-lg-6 p {
+      text-align: justify;
     }
 
-    #language-selector {
-      appearance: none;
-      background-color: #fff;
-      font-size: 14px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      background-image: url('https://tupynambas.com/assets/img/france.png');
-      background-repeat: no-repeat;
-      background-position: 10px center;
-      background-size: 20px;
-      padding-left: 40px;
-      height: 38px;
-    }
-
-    /* Menu de navegação e botão Appelez */
-    #header {
-      display: flex;
-      justify-content: space-between; /* Alinha os itens à esquerda e à direita */
-      align-items: center;
-      padding: 10px 20px;
-    }
-
-    #navmenu {
-      display: flex;
-      gap: 20px;
-    }
-
-    #navmenu ul {
+    .col-lg-6.content ul {
       list-style: none;
-      margin: 0;
       padding: 0;
+    }
+
+    .col-lg-6.content ul li {
+      margin-bottom: 15px;
       display: flex;
-      gap: 20px;
+      align-items: flex-start;
+      gap: 10px;
     }
 
-    #navmenu ul li {
-      margin: 0;
+    .col-lg-6.content ul li i {
+      color: #007bff;
+      font-size: 20px;
     }
 
-    #navmenu ul li a {
-      color: #000;
+    .col-lg-6 a.services {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 16px;
+      color: #007bff;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
 
-    #appelez-button {
-      margin-left: auto; /* Move o botão "Appelez" para a direita */
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+    .col-lg-6 a.services:hover {
+      color: #0056b3;
     }
-
-    #appelez-button:hover {
-      background-color: #0056b3;
-    }
-
-  </style>
+    
+          </style>
+       </head>
+    <body>
+       <link rel="stylesheet" href="styles.css">
+    </body>
+</html>
+<!-- =======================================================
+  * Template Name: Tupynambá
+  * Template URL: https://tupynambas.com
+  * Updated: 29 joumada al oula 1446 avec 
+  * Author: Ilyes Majid
+  * License: https://tupynambas.com
+  ======================================================== -->
 </head>
 
 <body class="index-page">
-  <header id="header" class="header fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex flex-column align-items-start">
 
-      <!-- Botão de idiomas -->
-      <div class="language-switcher">
-        <select id="language-selector" class="form-select">
-          <option value="index.html" selected>FR</option>
-          <option value="index-br.html">BR</option>
-          <option value="index-uy.html">ES</option>
-        </select>
-      </div>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <!-- Cabeçalho com menu e botão Appelez -->
-      <div class="d-flex align-items-center w-100">
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <h1 class="sitename">Tupynambá</h1>
-        </a>
+       <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Décommentez la ligne ci-dessous si vous souhaitez également utiliser un logo d'image -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Tupynambá</h1>
+      </a>
 
-        <!-- Menu de Navegação -->
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#accueil" class="active">Accueil</a></li>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#realisations">Réalisations</a></li>     
-            <li><a href="#contact">Contact</a></li>
-            </ul>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>  <!-- Botão Appelez -->
-           </nav>
-         </div>
-       </div>
-     </header>
-    </body>
-   </html>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#accueil" class="active">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#realisations">Réalisations</a></li>     
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
       <style>
       
