@@ -2,6 +2,10 @@
 <html lang="BR">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tupynambá</title>
+  
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Tupynambá</title>
@@ -27,6 +31,62 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Adicionando estilos -->        
+	  <style>
+	    /* Contêiner do botão */
+	    .language-switcher {
+	      display: flex;
+	      gap: 10px; /* Espaçamento entre os botões */
+	    }
+
+	    /* Estilização do botão de idioma */
+	    .language-btn {
+	      display: flex;
+	      align-items: center;
+	      gap: 3px; /* Espaçamento entre bandeira e texto */
+	      padding: 2px 6px;
+	      background-color: #ffffff; /* Cor de fundo clara */
+	      border: 1px solid #ddd;
+	      border-radius: 3px;
+	      font-size: 10px;
+	      cursor: pointer;
+	      transition: background-color 0.3s ease;
+	    }
+
+	    .language-btn:hover {
+	      background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+	    }
+
+	    .language-btn img {
+	      width: 14px;
+	      height: 10px;
+	      border-radius: 2px; /* Bordas arredondadas das bandeiras */
+	    }
+	  </style>
+	</head>
+
+<body>
+  <!-- Contêiner dos botões de idiomas -->
+  <div class="language-switcher">
+    <!-- Botão para francês -->
+    <button class="language-btn" onclick="window.location.href='index.html'">
+      <img src="https://tupynambas.com/assets/img/france.png" alt="France Flag">
+      <span>FR</span>
+    </button>
+
+    <!-- Botão para português -->
+    <button class="language-btn" onclick="window.location.href='index-br.html'">
+      <img src="https://tupynambas.com/assets/img/brazil.png" alt="Brazil Flag">
+      <span>BR</span>
+    </button>
+
+    <!-- Botão para espanhol -->
+    <button class="language-btn" onclick="window.location.href='index-uy.html'">
+      <img src="https://tupynambas.com/assets/img/uruguay.png" alt="Uruguay Flag">
+      <span>ES</span>
+    </button>
+  </div>
+</body>
 <!-- =======================================================
   * Template Name: Tupynambá
   * Template URL: https://tupynambas.com/br
