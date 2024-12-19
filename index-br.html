@@ -7,7 +7,7 @@
   <title>Tupynambá</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-  
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -26,65 +26,11 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  
-   <!-- Main CSS Inline -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre</title>
-  <link rel="stylesheet" href="styles.css"> 
-  
-  <!-- Para arquivo CSS externo -->
-  <style>
-     
-    /* CSS Inline */
-    .col-lg-6.content p,
-    .col-lg-6.content ul li span, 
-    .col-lg-6 p {
-      text-align: justify;
-    }
 
-    .col-lg-6.content ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .col-lg-6.content ul li {
-      margin-bottom: 15px;
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-    }
-
-    .col-lg-6.content ul li i {
-      color: #007bff;
-      font-size: 20px;
-    }
-
-    .col-lg-6 a.services {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 16px;
-      color: #007bff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    .col-lg-6 a.services:hover {
-      color: #0056b3;
-    }
-    
-          </style>
-       </head>
-    <body>
-       <link rel="stylesheet" href="styles.css">
-    </body>
-</html>
 <!-- =======================================================
   * Template Name: Tupynambá
   * Template URL: https://tupynambas.com/br
-  * Updated: 29 joumada al oula 1446 avec 
+  * Updated: 29 joumada al oula 1446  
   * Author: Ilyes Majid
   * License: https://tupynambas.com/br
   ======================================================== -->
@@ -95,128 +41,24 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-       <a href="index-br.html" class="logo d-flex align-items-center me-auto">
-        <!-- Décommentez la ligne ci-dessous si vous souhaitez également utiliser un logo d'image -->
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">Tupynambá</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#inicio" class="active">Início</a></li>
+          <li><a href="#inicio" class="inicio">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#serviços">Serviços</a></li>
-          <li><a href="#portefolio">Portefólio</a></li>     
+          <li><a href="#portfolio">Portfólio</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <style>
-      
-       #header {
-       display: flex;
-       align-items: center;
-       }
-
-       .container-xl {
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       }
-      
-       #navmenu {
-       margin-left: 0;
-       position: relative;
-       left: -40px;             /* Ajuste o valor para mover o menu mais para a esquerda */
-       }
-
-       .navmenu ul {
-       display: flex;
-       list-style: none;
-       padding: 0;
-       margin: 0;
-       }
-
-       .navmenu ul li {
-       margin-right: 20px;      /* Espaçamento entre itens do menu */
-       }
-
-      </style>
-    </head>
-        
-       <!-- Botão de idiomas -->
-    <div class="language-switcher">
-      <select id="language-selector" class="form-select">
-        <option value="index.html" selected>FR</option>
-        <option value="index-br.html">BR</option>
-        <option value="index-uy.html">ES</option>
-      </select>
-    </div>
-
-     <style>
-        /* Estiliza o seletor */
-        #language-selector {
-        appearance: none; /* Remove o estilo padrão do navegador */
-        background-color: #fff;
-        font-size: 14px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        background-image: url('https://tupynambas.com/assets/img/france.png'); /* Bandeira inicial */
-        background-repeat: no-repeat;
-        background-position: 10px center; /* Posiciona a bandeira à esquerda */
-        background-size: 20px; /* Tamanho da bandeira */
-        padding-left: 40px; /* Espaço para a bandeira */
-        height: 38px;  
-        }
-
-       /* Bandeiras específicas */
-       #language-selector option.france {
-       background-image: url('https://tupynambas.com/assets/img/france.png');
-       background-repeat: no-repeat;
-       background-position: left center;
-       }
-
-       #language-selector option.brazil {
-       background-image: url('https://tupynambas.com/assets/img/brazil.png');
-       background-repeat: no-repeat;
-       background-position: left center;
-       }
-
-       #language-selector option.uruguay {
-       background-image: url('https://tupynambas.com/assets/img/uruguay.png');
-       background-repeat: no-repeat;
-       background-position: left center;
-       }
-
-       /* Estiliza a lista de opções (alguns navegadores) */
-       #language-selector option {
-       padding-left: 40px; /* Espaço para bandeira */
-       background-size: 20px;
-  
-       }
-      }
-     }
-       
-      </style>
-     </head>
-      
-     <script>
-      document.getElementById("language-selector").addEventListener("change", function () {
-      const flags = {
-      "index.html": "https://tupynambas.com/assets/img/france.png",
-      "index-br.html": "https://tupynambas.com/assets/img/brazil.png",
-      "index-uy.html": "https://tupynambas.com/assets/img/uruguay.png",
-      };
-
-      // Atualiza o fundo do `select` com a bandeira correspondente
-      this.style.backgroundImage = `url(${flags[this.value]})`;
-     // Redireciona para a página correspondente
-      window.location.href = this.value;
-      });
-     </script>
-     
-  <a class="btn-getstarted" href="https://linktr.ee/info.tupynamba">Ligue Já</a>
+      <a class="btn-getstarted" href="#apropos">Ligue Já</a>
 
     </div>
   </header>
