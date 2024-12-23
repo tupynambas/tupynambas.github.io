@@ -52,37 +52,35 @@
 
   <style>
 
-      .language-switcher {
-      display: flex;
-      justify-content: flex-start;
-      gap: 10px;
-      margin-top: 20px;
-      }
+            /* Contêiner do botão */
+	    .language-switcher {
+	      display: flex;
+	      gap: 10px; /* Espaçamento entre os botões */
+	    }
 
-      /* Estilização do botão de idioma */
-     .btn-language {
-     display: flex;
-     align-items: center;
-     gap: 3px; /* Espaçamento entre bandeira e texto */
-     padding: 2px 6px;
-     background-color: #ffffff; /* Cor de fundo clara */
-     border: 1px solid #ddd;
-     border-radius: 3px;
-     font-size: 10px;
-     cursor: pointer;
-     transition: background-color 0.3s ease;
-     }
+	    /* Estilização do botão de idioma */
+	    .language-btn {
+	      display: flex;
+	      align-items: center;
+	      gap: 3px; /* Espaçamento entre bandeira e texto */
+	      padding: 2px 6px;
+	      background-color: #ffffff; /* Cor de fundo clara */
+	      border: 1px solid #ddd;
+	      border-radius: 3px;
+	      font-size: 10px;
+	      cursor: pointer;
+	      transition: background-color 0.3s ease;
+	    }
 
-      .btn-language img {
-      width: 14px;
-      height: 10px;
-      border-radius: 30%;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-      }
+	    .language-btn:hover {
+	      background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+	    }
 
-     .btn-language span {
-     font-weight: bold;
-     }
+	    .language-btn img {
+	      width: 14px;
+	      height: 10px;
+	      border-radius: 3px; /* Bordas arredondadas das bandeiras */
+	    }
 
    </style>
  </head>
