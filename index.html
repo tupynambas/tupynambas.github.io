@@ -70,84 +70,88 @@
       <a class="btn-getstarted" href="https://linktr.ee/info.tupynamba">Appelez</a>
 
       <style>
-      /* Estilo para o item do menu */
+      /* Estilo do item do dropdown */
       .dropdown {
-      display: flex;
-      align-items: center;
-      position: relative;
+      position: relative; /* Necessário para posicionar o submenu */
+      display: inline-block;
       }
 
-     /* Estilo para o link que contém a imagem e o texto */
-     .dropdown a {
-     display: flex;
-     align-items: center;
-     text-decoration: none;
+      /* Estilo do botão do dropdown */
+      .dropdown img {
+      width: 20px; /* Largura da imagem */
+      height: 20px; /* Altura da imagem */
+      vertical-align: middle; /* Alinha ao centro */
+      margin-right: 5px; /* Espaço entre imagem e texto */
+      }
+
+      .dropdown span {
+      font-size: 14px; /* Tamanho do texto */
+      color: #333; /* Cor do texto */
+      font-weight: bold; /* Texto em negrito */
+      }
+
+      .dropdown i {
+      margin-left: 5px; /* Espaço entre texto e seta */
+      font-size: 12px; /* Tamanho da seta */
+      transition: transform 0.3s ease; /* Suaviza a rotação da seta */
+      }
+
+      /* Submenu (escondido por padrão) */
+      .dropdown ul {
+      display: none; /* Esconde o submenu */
+      position: absolute;
+      top: 100%; /* Alinha abaixo do botão */
+      left: 0;
+      background: #fff; /* Fundo branco */
+      list-style: none; /* Remove os marcadores da lista */
+      padding: 10px 0;
+      margin: 0;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+      border-radius: 5px; /* Bordas arredondadas */
+      z-index: 10; /* Certifica que aparece sobre outros elementos */
+      }
+
+      /* Estilo dos itens do submenu */
+     .dropdown ul li {
+     padding: 5px 20px; /* Espaçamento interno dos itens */
+     }
+
+     .dropdown ul li a {
+     text-decoration: none; /* Remove sublinhado */
      color: #333; /* Cor do texto */
-     font-size: 16px;
-     font-weight: 500;
-     padding: 10px 15px;
-     transition: color 0.3s ease;
+     font-size: 14px; /* Tamanho do texto */
+     display: block; /* Faz os links ocuparem a largura total */
+     transition: background 0.3s ease; /* Suaviza o hover */
      }
 
-     /* Estilo para a imagem */
-     .dropdown a img {
-     width: 20px; /* Tamanho da imagem */
-     height: 20px;
-     margin-right: 10px; /* Espaço entre a imagem e o texto */
-     border-radius: 50%;
-     transition: transform 0.3s ease;
+     /* Efeito hover nos itens do submenu */
+     .dropdown ul li a:hover {
+     background: #f5f5f5; /* Fundo ao passar o mouse */
+     color: #007bff; /* Azul ao passar o mouse */
      }
 
-     /* Estilo para o ícone (seta) */
-     .dropdown a i {
-     margin-left: 10px;
-     font-size: 16px; /* Tamanho do ícone */
-     transition: transform 0.3s ease;
+     /* Mostrar o submenu ao passar o mouse */
+     .dropdown:hover ul {
+     display: block;
      }
 
-     /* Efeito de hover sobre o link */
-     .dropdown a:hover {
-     color: #007bff; /* Cor do texto ao passar o mouse */
+     /* Girar a seta ao passar o mouse */
+     .dropdown:hover i {
+     transform: rotate(180deg); /* Gira a seta */
      }
 
-     /* Efeito de hover sobre a imagem */
-     .dropdown a:hover img {
-     transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
-     }
-
-     /* Efeito de hover sobre o ícone */
-     .dropdown a:hover i {
-     transform: rotate(180deg); /* Roda o ícone da seta */
-     }
-        
-     /* Estilo do submenu (se necessário) */
-     .dropdown ul {
-     display: none;
-     list-style: none;
-     position: absolute;
-     top: 100%;
-     left: 0;
-     background-color: #fff;
-     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-     padding: 10px 0;
-     margin: 0;
-     border-radius: 6px;
-     }
-        
-     /* Responsividade */
+     /* Responsividade para mobile */
      @media (max-width: 768px) {
-     .dropdown a {
-     font-size: 14px;
-     padding: 8px 12px;
+     .dropdown {
+     display: block; /* Ajusta o display no mobile */
      }
-
-     .dropdown a img {
-     width: 18px;
-     height: 18px;
+     .dropdown ul {
+     position: static; /* Fica no fluxo do menu hambúrguer */
+     box-shadow: none; /* Remove a sombra no mobile */
+     border-radius: 0; /* Remove bordas arredondadas no mobile */
      }
-
-     .dropdown a i {
-     font-size: 14px;
+     .dropdown ul li {
+     padding: 10px 15px; /* Ajusta o espaçamento no mobile */
      }
     }
       </style>
