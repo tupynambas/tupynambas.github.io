@@ -119,7 +119,21 @@
      .dropdown a:hover i {
      transform: rotate(180deg); /* Roda o ícone da seta */
      }
-
+        
+     /* Estilo do submenu (se necessário) */
+     .dropdown ul {
+     display: none;
+     list-style: none;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #fff;
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+     padding: 10px 0;
+     margin: 0;
+     border-radius: 6px;
+     }
+        
      /* Responsividade */
      @media (max-width: 768px) {
      .dropdown a {
@@ -136,7 +150,6 @@
      font-size: 14px;
      }
     }
-
       </style>
     </div>
   </header>
