@@ -54,7 +54,7 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#equipe">Équipe</a></li>
-          <li class="dropdown"><img src="https://tupynambas.com/assets/img/idioma.jpg"><span></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><img src="https://tupynambas.com/assets/img/idioma.png"><span></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
              <ul>
                 <li><a href="https://tupynambas.com/br.html">Português</a></li>
                 <li><a href="https://tupynambas.com/es.html">Español</a></li>
@@ -68,10 +68,95 @@
       </nav>
 
       <a class="btn-getstarted" href="https://linktr.ee/info.tupynamba">Appelez</a>
+      
+      /* Estilo para o item do menu */
+      .dropdown {
+      display: flex;
+      align-items: center;
+      position: relative;
+      }
+
+     /* Estilo para o link que contém a imagem e o texto */
+     .dropdown a {
+     display: flex;
+     align-items: center;
+     text-decoration: none;
+     color: #333; /* Cor do texto */
+     font-size: 16px;
+     font-weight: 500;
+     padding: 10px 15px;
+     transition: color 0.3s ease;
+     }
+
+     /* Estilo para a imagem */
+     .dropdown a img {
+     width: 20px; /* Tamanho da imagem */
+     height: 20px;
+     margin-right: 10px; /* Espaço entre a imagem e o texto */
+     border-radius: 50%;
+     transition: transform 0.3s ease;
+     }
+
+     /* Estilo para o ícone (seta) */
+     .dropdown a i {
+     margin-left: 10px;
+     font-size: 16px; /* Tamanho do ícone */
+     transition: transform 0.3s ease;
+     }
+
+     /* Efeito de hover sobre o link */
+     .dropdown a:hover {
+     color: #007bff; /* Cor do texto ao passar o mouse */
+     }
+
+     /* Efeito de hover sobre a imagem */
+     .dropdown a:hover img {
+     transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+     }
+
+     /* Efeito de hover sobre o ícone */
+     .dropdown a:hover i {
+     transform: rotate(180deg); /* Roda o ícone da seta */
+     }
+
+     /* Estilo do submenu (se necessário) */
+     .dropdown ul {
+     display: none;
+     list-style: none;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #fff;
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+     padding: 10px 0;
+     margin: 0;
+     border-radius: 6px;
+     }
+
+     .dropdown:hover ul {
+     display: block;
+     }
+
+     /* Responsividade */
+     @media (max-width: 768px) {
+     .dropdown a {
+     font-size: 14px;
+     padding: 8px 12px;
+     }
+
+     .dropdown a img {
+     width: 18px;
+     height: 18px;
+     }
+
+     .dropdown a i {
+     font-size: 14px;
+     }
+    }
 
     </div>
   </header>
-
+  
   <main class="main">
 
     <!-- Hero Section -->
