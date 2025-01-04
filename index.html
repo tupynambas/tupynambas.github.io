@@ -591,69 +591,45 @@
           </div>
 
         <div class="col-lg-7">
-  <div id="calendar-container" class="calendar-container" data-aos="fade-up" data-aos-delay="200"></div>
-  
-  <form action="forms/schedule.php" method="post" id="schedule-form" style="display: none;">
-    <input type="hidden" name="datetime" id="selected-datetime">
-    <div class="col-md-12 text-center">
-      <button type="submit" class="btn btn-primary mt-3">Confirmer</button>
-    </div>
-  </form>
-</div>
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
 
-<!-- Inclua os estilos e scripts do FullCalendar -->
-<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Tu Nombre</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
 
-<style>
-      /* Ajusta o tamanho do calendário para igualar ao formulário */
-      #calendar-container {
-      width: 100%;
-      height: 500px; /* Altere esta altura se o formulário antigo for maior/menor */
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 15px;
-      background-color: #fff;
-  }
-      .fc {
-      height: 100%; /* Garante que o calendário ocupe a altura definida */
-  }
-      .fc-toolbar {
-      margin-bottom: 15px;
-  }
-</style>
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Tu Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
 
-<script>
-      document.addEventListener('DOMContentLoaded', function () {
-      const calendarEl = document.getElementById('calendar-container');
-    
-      const calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth', // Exibição inicial mensal
-      selectable: true, // Permite selecionar datas
-      headerToolbar: {
-      left: 'prev,next today',
-      center: 'title',
-      right: 'dayGridMonth,timeGridWeek,timeGridDay' // Visualizações diferentes
-      },
-      dateClick: function(info) {
-      const selectedDate = info.dateStr;
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Sujeto</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
 
-      // Preenche a data selecionada no formulário
-      document.getElementById('selected-datetime').value = selectedDate;
-      document.getElementById('schedule-form').style.display = 'block';
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Mensaje</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
 
-      alert(`Vous avez choisi : ${selectedDate}`);
-      }
-    });
+                <div class="col-md-12 text-center">
+                  <div class="loading">Cargando</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
 
-     calendar.render();
-  });
-</script>
-             <!-- End Contact Form --> 
+                  <button type="submit">Enviar</button>
+                </div>
+
+              </div>
+            </form>
+          
+          </div><!-- End Contact Form -->
+
         </div>
 
       </div>
-
     </section><!-- /Contact Section -->
 
   </main>
