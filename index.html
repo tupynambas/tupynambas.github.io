@@ -646,6 +646,40 @@
     calendar.render();
   });
 </script>
+      <div class="col-lg-7">
+  <div id="tui-calendar" class="calendar-container"></div>
+</div>
+
+<!-- Inclua os estilos e scripts do TUI Calendar -->
+<link rel="stylesheet" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css">
+<script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.min.js"></script>
+
+<style>
+  #tui-calendar {
+    height: 450px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+  }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const calendar = new tui.Calendar('#tui-calendar', {
+    defaultView: 'month', // Exibição inicial mensal
+    taskView: false, // Oculta tarefas
+    scheduleView: true, // Mostra horários
+    useDetailPopup: true,
+    useCreationPopup: true,
+    });
+
+    calendar.on('selectDateTime', (event) => {
+    alert(`Data escolhida: ${event.date}`);
+    });
+  });
+</script>
              <!-- End Contact Form --> 
         </div>
 
