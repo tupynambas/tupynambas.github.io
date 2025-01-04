@@ -591,41 +591,61 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/schedule.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
+              <div class="col-md-12">
+            <label for="datetime-field" class="pb-2">Sélectionnez un jour et une heure</label>
+         <input 
+          type="text" 
+          class="form-control calendar-input" 
+          name="datetime" 
+          id="datetime-field" 
+          placeholder="Cliquez pour choisir une date et une heure" 
+          required>
+        </div>
 
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Ton Nom</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
+        <div class="col-md-12 text-center">
+        <div class="loading">Chargement</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Votre rendez-vous a été enregistré. Merci !</div>
 
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Votre Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
+        <button type="submit">Confirmer</button>
+      </div>
+    </div>
+  </form>
+</div>
 
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Sujet</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
+       <!-- Inclua os estilos e scripts do Flatpickr -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+       <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
+      <style>
+      /* Ajuste para o tamanho do calendário */
+      .calendar-input {
+      height: 56px; /* Mesma altura dos campos do formulário */
+      font-size: 16px; /* Ajuste para harmonizar o texto */
+      }
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Chargement</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Votre message a été envoyé. Merci !</div>
+      /* Adicionar espaçamento interno similar ao formulário anterior */
+      .flatpickr-calendar {
+      width: 100%; /* O calendário usará a largura total */
+      max-width: none; /* Impede que seja menor que o campo */
+      }
+     </style>
 
-                  <button type="submit">Envoyer</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
+     <script>
+      // Configuração do Flatpickr
+      document.addEventListener('DOMContentLoaded', function () {
+      flatpickr('#datetime-field', {
+      enableTime: true,
+      dateFormat: "Y-m-d H:i",
+      minDate: "today", // Evita escolher datas no passado
+      time_24hr: true, // Ativa o formato de 24 horas
+      locale: "fr" // Ajusta o idioma para francês
+      });
+     });
+    </script>
+             <!-- End Contact Form --> 
         </div>
 
       </div>
