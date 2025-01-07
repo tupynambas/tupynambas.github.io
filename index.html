@@ -592,7 +592,6 @@
 
         <div class="col-lg-7">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-            <div style="position: relative; width: 100%; height: 0; padding-bottom: 50%;">
             <iframe src="https://calendar.google.com/calendar/embed?height=575&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&title=Tupynamb%C3%A1&hl=en_GB&src=aW5mby50dXB5bmFtYmFAZ21haWwuY29t&src=ZnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%230B8043" 
             style="border-width:0" 
             width="585" 
@@ -601,6 +600,21 @@
         </iframe>
         </div>    
       </div>
+        <style>
+        /* Contêiner padrão para o iframe */
+        .responsive-calendar {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75%; /* Proporção inicial do calendário */
+        }
+        /* Ajuste para dispositivos móveis */
+        @media (max-width: 768px) {
+        .responsive-calendar {
+        padding-bottom: 37.5%; /* Reduz o tamanho em 50% */
+        }
+       }
+        </style>
           
     </section><!-- /Contact Section -->
 
