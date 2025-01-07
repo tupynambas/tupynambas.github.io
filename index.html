@@ -605,15 +605,19 @@
         .responsive-calendar {
         position: relative;
         width: 100%;
+        max-width: 100%; /* Não ultrapassa a largura da tela */
         height: 0;
         padding-bottom: 75%; /* Proporção inicial do calendário */
+        margin: 0 auto; /* Centraliza o calendário */
         }
         /* Ajuste para dispositivos móveis */
         @media (max-width: 768px) {
         .responsive-calendar {
         padding-bottom: 37.5%; /* Reduz o tamanho em 50% */
+        max-width: 90%; /* Limita a largura a 90% da tela */
+        margin: 0 auto; /* Centraliza o calendário em dispositivos móveis */
         }
-       }
+      }
         </style>
           
     </section><!-- /Contact Section -->
