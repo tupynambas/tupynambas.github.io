@@ -590,36 +590,42 @@
             </div>
           </div>
 
-        <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-            <div class="responsive-calendar">  
-            <iframe src="https://calendar.google.com/calendar/embed?height=575&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&title=Tupynamb%C3%A1&hl=en_GB&src=aW5mby50dXB5bmFtYmFAZ21haWwuY29t&src=ZnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%230B8043" 
-            style="border-width:0" 
-            width="585" 
-            height="570" 
-            frameborder="0" scrolling="no">
-      
-        <style>
-        /* Contêiner padrão para o iframe */
-        .responsive-calendar {
-        position: relative;
-        width: 100%; /* Largura padrão */
-        height: 0;
-        padding-bottom: 75%; /* Proporção inicial */
-        margin: 0 auto; /* Centraliza o calendário */
+          <div class="col-lg-7">
+          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="responsive-calendar">  
+          <iframe 
+          src="https://calendar.google.com/calendar/embed?height=575&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&title=Tupynamb%C3%A1&hl=en_GB&src=aW5mby50dXB5bmFtYmFAZ21haWwuY29t&src=ZnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%230B8043" 
+          style="border-width:0" 
+          frameborder="0" 
+          scrolling="no">
+          </iframe>
+        </div>
+       </form>
+     </div>
+
+          <style>
+          /* Estilo do contêiner do calendário */
+          .responsive-calendar {
+          position: relative;
+          width: 100%;
+          height: 0;
+          padding-bottom: 75%; /* Proporção inicial para desktops */
+          margin: 0 auto;
+          }
+          /* Garantir que o iframe ocupe o tamanho do contêiner */
+          .responsive-calendar iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          }
+          /* Ajuste para dispositivos móveis */
+          @media (max-width: 768px) {
+          .responsive-calendar {
+          padding-bottom: 60%; /* Ajusta a altura proporcionalmente para dispositivos menores */
+          }
         }
-        /* Ajuste para dispositivos móveis */
-        @media (max-width: 768px) {
-        .responsive-calendar {
-        width: 90%; /* Reduz a largura para 90% da tela */
-        padding-bottom: 37.5%; /* Reduz a altura em 50% */
-        margin: 0 auto; /* Centraliza o calendário */
-        }
-        iframe {
-        width: 100%; /* Garante que o iframe acompanhe o contêiner */
-        height: 100%; /* Ajusta a altura proporcionalmente */
-       }
-      }
         </style>
       </iframe>
     </div>    
