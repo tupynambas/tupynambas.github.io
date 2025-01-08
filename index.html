@@ -592,6 +592,7 @@
 
         <div class="col-lg-7">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <div class="responsive-calendar">  
             <iframe src="https://calendar.google.com/calendar/embed?height=575&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&title=Tupynamb%C3%A1&hl=en_GB&src=aW5mby50dXB5bmFtYmFAZ21haWwuY29t&src=ZnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%230B8043" 
             style="border-width:0" 
             width="585" 
@@ -600,25 +601,23 @@
       
         <style>
         /* Contêiner padrão para o iframe */
-        .calendário {
+        .responsive-calendar {
         position: relative;
-        width: 100%;
-        max-width: 100%; /* Não ultrapassa a largura da tela */
+        width: 100%; /* Largura padrão */
         height: 0;
-        padding-bottom: 75%; /* Proporção inicial do calendário */
+        padding-bottom: 75%; /* Proporção inicial */
         margin: 0 auto; /* Centraliza o calendário */
         }
         /* Ajuste para dispositivos móveis */
         @media (max-width: 768px) {
-        .calendário {
-        padding-bottom: 37.5%; /* Reduz o tamanho em 50% */
-        max-width: 50%; /* Limita a largura a 50% da tela */
-        margin: 0 auto; /* Centraliza o calendário em dispositivos móveis */
+        .responsive-calendar {
+        width: 90%; /* Reduz a largura para 90% da tela */
+        padding-bottom: 37.5%; /* Reduz a altura em 50% */
+        margin: 0 auto; /* Centraliza o calendário */
         }
-    
-          iframe {
-        width: 50%; /* Garante que o iframe acompanhe o contêiner */
-        height: 50%; /* Ajusta a altura proporcionalmente */
+        iframe {
+        width: 100%; /* Garante que o iframe acompanhe o contêiner */
+        height: 100%; /* Ajusta a altura proporcionalmente */
        }
       }
         </style>
